@@ -1,0 +1,6 @@
+%Buat Axes
+uf = axes('unit','normalized','position',[0 0 1 1]);
+%Import Background
+bg = imread('bg2.png'); imagesc(bg);
+%Matikan Axes dan Tampilkan Background
+set(uf,'handlevisibility','off','visible','off')

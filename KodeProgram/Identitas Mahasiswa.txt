@@ -1,0 +1,6 @@
+[namafile, formatfile] = uigetfile({'*.png'}, 'membuka gambar'); %Memilih Gambar
+image = imread([formatfile, namafile]); %Membaca Gambar
+guidata(hObject, handles);
+axes(handles.axes1); %Memilih axes1 sebagai letak gambar yang dimunculkan
+imshow(image); %Memunculkan Gambar
+msgbox('IDENTITAS LENGKAP KAMI :)','INFORMASI','warn');

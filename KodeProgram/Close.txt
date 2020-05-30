@@ -1,0 +1,12 @@
+answer = questdlg('APAKAH ANDA YAKIN INGIN KELUAR APLIKASI ?', ...
+    'KONFIRMASI', ...
+    'IYA','TIDAK','IYA');
+switch answer
+    case 'IYA'
+        disp([answer,'iya'])
+        close;
+        msgbox('TERIMAKASIH, SAMPAI JUMPA KEMBALI :(','KONFIRMASI','warn');
+    case 'TIDAK'
+        disp([answer,'tidak'])
+        msgbox('SELAMAT DATANG KEMBALI :)','KONFIRMASI','warn');
+end

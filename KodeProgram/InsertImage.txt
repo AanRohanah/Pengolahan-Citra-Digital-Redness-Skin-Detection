@@ -1,0 +1,8 @@
+open=guidata(gcbo);
+[namafile, formatfile]=uigetfile({'*.jpg;*.bmp;*.png;*.tif'},'openImage');
+citra=imread([formatfile, namafile]);
+guidata(hObject, handles);
+set(open.figure1,'CurrentAxes',open.axes2);
+set(imagesc(citra));
+set(open.axes2,'Userdata',citra);
+msgbox('FOTO BERHASIL DIINPUT','INFORMASI','warn');
